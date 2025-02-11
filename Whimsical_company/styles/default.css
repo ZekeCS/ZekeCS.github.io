@@ -1,0 +1,55 @@
+html, body {
+    text-align: center;
+    color: white;
+    background-image: url("../images/hedgehog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #111;
+    padding: 12px;
+}
+main {
+    flex: 1;
+}
+footer {
+    background-color: #111;
+    padding: 40px;
+    flex-shrink: 0;
+}
+h1 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+h2 {
+    margin: 40px auto;
+    font-size: 70px;
+}
+h3 {
+    margin: auto;
+}
+main p {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 50px;
+    font-weight: bold;
+}
+#navlink {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 20px
+    
+}
+#navlink:hover {
+    text-decoration: underline;
+    color: #ccc
+}
