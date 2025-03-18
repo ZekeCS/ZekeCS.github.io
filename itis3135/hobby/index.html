@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess - Hobby Site</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D2A679;
+            color: #7B1F1F;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #7B1F1F;
+            padding: 15px;
+            color: #D2A679
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px; 
+        }
+        main {
+            flex: 1;
+        }
+        main section p  {
+            width: 80%;
+            text-align: justify;
+            margin: 0 auto;
+            line-height: 1.8;
+            
+        }
+        #few-words{
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 40px;
+        }
+        main section figure figcaption {
+            margin-bottom: 25px;
+        }
+        nav ul li {
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+        }
+        nav ul li a {
+            color: #D2A679;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content-section {
+            display: none;
+            padding: 20px;
+        }
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        .content-section:not(#home) {
+            display: none;
+        }
+        #home {
+            display: block;
+        }
+        footer {
+            background-color: #7B1F1F;
+            padding: 15px;
+            width: 100%;
+            bottom: 0;
+            color: #D2A679
+        }
+        footer p a {
+            color: #D2A679;
+        }
+        footer p a:hover {
+            color: #e09430
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chess as a Hobby</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="displaySection('home')">Home</a>♟️</li>
+                <li><a href="#" onclick="displaySection('about')">About</a>♟️</li>
+                <li><a href="#" onclick="displaySection('when')">When to Play</a>♟️</li>
+                <li><a href="#" onclick="displaySection('where')">Where to Play</a>♟️</li>
+                <li><a href="#" onclick="displaySection('how')">How to Play</a>♟️</li>
+                <li><a href="#" onclick="displaySection('why')">Why Play?</a>♟️</li>
+                <li><a href="#" onclick="displaySection('ai-prompts')">AI Prompts</a>♟️</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="content-section">
+            <h2>Home</h2>
+            <p>For me, chess is more than just a game—it’s a hobby that has shaped how I think and approach challenges. This website is a reflection of my personal journey with chess, where I aim to share the many ways this timeless game has influenced my life. Here, you’ll find insights into how chess can be an engaging hobby, offering opportunities for growth, mental stimulation, and connection with others. While every player’s experience is unique, the goal of this site is to provide an accessible path for anyone interested in diving deeper into the world of chess, from learning the basics to appreciating its rich complexity.</p>
+            <figure>
+                <img src="./images/dad-son-chess.jpg" alt="image by Freepik" width="330" height="500">
+                <figcaption>Father and son playing chess and having fun</figcaption>
+            </figure>
+            <p>When I was a kid, my grandfather taught me how to play chess on an antique chess board he had. I still cherish this memory and it is why I have a love of strategy games to this day. Even though I may not be the best at it, I love playing and am foirtunate to still be able to play with him and I hope to inspire others to be able to enjoy something with their loved ones as much as I enjoy chesss with mine</p>
+        </section>
+        
+        <section id="about" class="content-section hidden">
+            <h2>About Chess</h2>
+            <p>Chess is a game with a deep and storied history that dates back over 1,500 years. Its origins trace back to ancient India, where it began as a game called Chaturanga, representing the military divisions of infantry, cavalry, elephants, and chariots. Over time, it spread to Persia, evolving into Shatranj, before reaching the Islamic world and Europe. By the 15th century, the modern version of chess took shape, with the familiar rules we know today. Throughout history, it has been embraced by rulers, scholars, and everyday people alike, evolving into a game of profound intellectual challenge and cultural significance that is played by millions around the world today.</p>
+            <figure>
+                <img src="./images/shatranj.jpg" alt="shatranj being played depicted in a Persian manuscript" width="400" height="600">
+                <figcaption>Persians playing Shatranj dressed in Mongol attire</figcaption>
+            </figure>
+            <p>Chess is played in a variety of settings, from casual games at home to international tournaments. It has long been used as a tool for learning, developing skills like problem-solving, planning, and concentration. Some approach it as a competitive pursuit, aiming for mastery through study and practice, while others enjoy it as a leisurely activity. With the rise of online platforms, chess is now more accessible than ever, allowing players from all over the world to connect and play at any time. No matter the setting, chess continues to be a game that people engage with in different ways, each finding their own meaning and enjoyment in it.</p>
+        </section>
+        
+        <section id="when" class="content-section hidden">
+            <h2>When to Play</h2>
+            <p>Chess can be played anytime with anyone, making it one of the most flexible games to enjoy. Whether it’s a quick game with a friend, a scheduled tournament, or a long correspondence match played over days or even weeks, chess fits into any schedule. Casual players can pick up a game whenever they have free time, while competitive players often plan their matches around club meetings or online events. With the rise of digital platforms, chess is now available 24/7, allowing players to find an opponent instantly, no matter where they are in the world.</p>
+            <figure>
+                <img src="./images/morning-chess.jpg" alt="image by azerbaijan_stockers on Freepik" width="460" height="650" >
+                <figcaption>Chess being played over morning coffee and breakfast</figcaption>
+            </figure>
+            <p>The best time to play chess depends on personal goals and preferences. Some enjoy it as a morning mental warm-up, while others see it as a way to unwind at the end of the day. Chess tournaments and club events are often scheduled on weekends, making it easier for players to participate without weekday distractions. For those looking to improve, setting aside regular practice time can help develop skills and deepen strategic understanding. Whether played as a daily habit or a spontaneous challenge, chess is a game that fits seamlessly into any routine.</p>
+        </section>
+        
+        <section id="where" class="content-section hidden">
+            <h2>Where to play</h2>
+            <figure>
+                <img src="./images/chess-outside.jpg" alt="Life sized outdoor chess board" width="600" height="450">
+                <figcaption>Life sized outdoor chess board</figcaption>
+            </figure>
+            <p>Chess can be played in a variety of places, making it accessible to players of all levels. Local chess clubs provide a structured environment for learning and competition, while parks often feature free public chess tables where anyone can sit down for a casual game. Some cities even have large outdoor chess boards, offering a more interactive and social way to play. Libraries, cafes, and community centers also serve as gathering spots for chess enthusiasts. For those who prefer to play from home, online chess platforms allow players to connect with opponents from around the world at any time. Whether in person or online, there is no shortage of places to enjoy the game.</p>
+            <figure>
+                <img src="./images/park-chess.jpg" alt="Two older gentlemen playing chess at a park chess table" width="500" height="500">
+                <figcaption>Two older gentlemen playing chess at a park chess table</figcaption>
+            </figure>
+        </section>
+        
+        <section id="how" class="content-section hidden">
+            <h2>How to Play</h2>
+            <p>Chess is a two-player strategy game played on an 8x8 board with alternating light and dark squares. Each player controls 16 pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The objective is to checkmate the opponent's king, meaning the king is under attack with no legal moves to escape. Players take turns moving one piece at a time, following unique movement rules for each piece. Pawns move forward but capture diagonally, knights move in an L-shape, bishops move diagonally, rooks move horizontally or vertically, and the queen combines both rook and bishop movements. The king moves one square in any direction. Special moves include castling, en passant, and pawn promotion. The game can end in checkmate, stalemate, or a draw under various conditions.</p>
+            <figure>
+                <img src="./images/chess-top-down.jpg" alt="image by 8photo on Freepik" width="400" height="400">
+                <figcaption>Top down view of chess board and pieces</figcaption>
+            </figure>
+            <p>Strategic play in chess involves controlling the center of the board, developing pieces efficiently, and ensuring king safety. A common opening principle is to move pawns to control central squares (e4, d4, e5, d5) and quickly develop knights and bishops. Midgame strategy revolves around positioning, tactical attacks, and exchanges that improve piece activity. Players should look for pins, forks, and skewers to gain material advantages. Endgame play focuses on converting advantages into a checkmate, often by promoting pawns or forcing the opponent’s king into a losing position. Awareness of time control, positional sacrifices, and pattern recognition helps in advanced play.</p>
+        </section>
+        
+        <section id="why" class="content-section hidden">
+            <h2>Why Play?</h2>
+            <p>Playing chess strengthens the mind in ways few other games can. It challenges players to think critically, plan ahead, and adapt to new situations—all skills that extend beyond the board into everyday life. Chess encourages logical reasoning, patience, and problem-solving, making it a valuable tool for mental development at any age. Studies have even shown that playing chess regularly can improve memory, concentration, and cognitive function, helping players sharpen their minds while enjoying the game. Whether you're looking to develop strategic thinking or simply keep your brain active, chess offers a rewarding mental workout.</p>
+            <figure>
+                <img src="./images/young-kid-playing-chess.jpg" alt="image by Freepik" width="600" height="400">
+                <figcaption>Top down view of chess board and pieces</figcaption>
+            </figure>
+            <p>Beyond its intellectual benefits, chess is simply fun. Every game is a unique experience, filled with surprises, creative possibilities, and moments of triumph. Whether played casually with friends, competitively in tournaments, or online against players from around the world, chess provides endless opportunities for engagement and growth. The game is easy to learn yet offers a lifetime of challenge, making it accessible to beginners while still captivating seasoned players. Chess is more than just a game—it’s a source of entertainment, connection, and personal achievement that can be enjoyed for a lifetime.</p>
+        </section>
+        <section id="ai-prompts" class="content-section hidden">
+            <h3>Model Used</h3>
+            <p id="few-words">ChatGPT</p>
+            <h3>Prompts</h3>
+            <p><b>First about paragraph and first home paragraph:</b> give me two paragraphs for an about page that's as if youre explaining to someone what chess is all about, not the rules but the game itself, the first paragraph should be about the history of chess and the second should be about chess as a hobby and what this website offers, the website contains an about page, a why you should play page, a how to play page, a where to play page and a when to play page, you dont have to mention these directly but do mention that the goal is to to educate people on my experience with chess as a hobby and how i outline it in the website</p>
+            <br>
+            <p><b>Second about paragraph:</b> give me another paragraph about the context of chess. keep the adjectives and sales pitchy nature to a minimum until the why section</p>
+            <br>
+            <p><b>Where paragraph:</b> give me a paragraph for the where section, talk about how clubs, outdoor large chess boards, free park chess boards and various other places such as online chess exist for players or hobbyists to enjoy playing chess wherever they are</p>
+            <br>
+            <p><b>First and second when paragraphs:</b> i need two paragraphs for the when section, they should be distinct like the previous ones, i know the first can start like "Chess can be played anytime with anyone...." or something like that, and ill let you make the second one</p>
+            <br>
+            <p><b>First and second why paragraphs:</b> now, give me two distinct paragraphs on why. Why should people play chess, i.e. mental strngthening, strategic thinking, fun, remember there should be two distinct paragraphs</p>
+            <br>
+            <p><b>First and second how paragraphs:</b> give me two separate paragraphs for a "how to play" section, the first being the general rules and the second being the strategy typically employed/things to note</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Designed by <a href="../housersolutions.com/index.html">Houser Solutions ©2025</a> <i><a target="_blank" href="https://www.freecodecamp.org/certification/ZekeH/responsive-web-design">Certified in Responsive Web Design</a></i></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+            <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+    
+    <script>
+        function displaySection(sectionId) {
+            document.querySelectorAll('.content-section').forEach((section) => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
