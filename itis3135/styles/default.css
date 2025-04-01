@@ -34,6 +34,11 @@ footer {
     padding: 20px;
 }
 
+h2 {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
 nav a {
     margin: 0 10px;
     text-decoration: none;
@@ -62,10 +67,13 @@ footer a img {
     max-width: 100%;
     height: auto;
     max-height: 500px;
+    display: block;
+    margin: 0 auto;
 }
 
 figure figcaption {
     font-style: italic;
+    text-align: center;
 }
 
 #background ul {
@@ -88,4 +96,39 @@ figure figcaption {
 
 #separate_links {
     margin-top: 20px;
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+#byoForm {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    max-width: 40%;
+}
+#resultsContainer {
+    list-style-type: disc;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.addCourse {
+    background-color: #a8d8d8;
+    color: #225;
+    border: none;
+    margin: 10px;
+    box-shadow: 6px 6px 10px grey;
+    height: 40px;
+}
+.addCourse:hover {
+    cursor: pointer;
 }
