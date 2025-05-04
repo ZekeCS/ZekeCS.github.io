@@ -214,3 +214,11 @@ h3 {
     text-align: center;
     margin-top: 10px;
 }
+#overview {
+    margin: 0 400px;
+}
+#client-info p {
+    display: block;
+    text-align: left;
+    margin-left: 820px;
+}
