@@ -6,51 +6,46 @@
     <title>Get an Estimate - Pro Plus Consulting</title>
     <link rel="stylesheet" href="project_styles.css"/>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script defer src="./scripts/estimate.js"></script>
 </head>
-<body>
+<body class="estimate-page">
     <header>
-        <div class="logo">
-            <img src="./images/propluslogo.png" alt="Logo">
-        </div>
-        <h1>Get an Estimate</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="estimate.html">Get an Estimate</a>
-            <a href="hire_us.html">Hire Us</a>
-            <a href="client_portal.html">Client Portal</a>
-            <a href="admin_portal.html">Employee Portal</a>
-            <a href="login.html">Login</a>
-        </nav>
+        <div data-include="components/header.html"></div>
     </header>
 
     <main>
-        <form>
-            <label>Service Type:
-                <select required>
-                    <option>(Choose)</option>
-                    <option>Full-Time</option>
-                    <option>Task-Based</option>
-                </select>
-            </label>
+        <section>
+            <form id="estimate-form">
+                <label>Service Type:
+                    <select id="service-type" required>
+                        <option value="">(Choose)</option>
+                        <option value="Full-Time">Full-Time</option>
+                        <option value="Task-Based">Task-Based</option>
+                    </select>
+                </label>
 
-            <label>Years in Operation:
-            <input type="number" min="1" required />
-            </label>
+                <label>Years in Operation:
+                    <input type="number" id="years" min="1" required />
+                </label>
 
-            <label>Number of Employees:
-            <input type="number" min="1" required />
-            </label>
+                <label>Number of Employees:
+                    <input type="number" id="employees" min="1" required />
+                </label>
 
-            <button type="submit">Get Estimate</button>
-        </form>
+                <button type="submit">Get Estimate</button>
+            </form>
+        </section>
 
-        <div id="estimate-result">
-            <p>estimate appears here.</p>
-        </div>
+        <section id="estimate-result" style="display:none;">
+            <h2>Estimated Cost</h2>
+            <div id="estimate-output"></div>
+        </section>
     </main>
 
     <footer>
-        <p>Designed by <a href="housersolutions.com/index.html">Houser Solutions ©2025</a>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/title-inject.js"></script>
 </body>
 </html>

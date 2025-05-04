@@ -204,3 +204,13 @@ h3 {
 .static-image.active {
     opacity: 1;
 }
+.example-img {
+    width: 20%;
+    margin: 5px;
+}
+#caption {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
